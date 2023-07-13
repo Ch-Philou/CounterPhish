@@ -1,0 +1,41 @@
+{
+    "extensionName": {
+      "message": "CounterPhishing",
+      "description": "Name of the extension"
+    },
+  
+    "extensionDescription": {
+      "message": "What is CounterPhishing",
+      "description": "This (modest) extension aims to facilitate the fight against phishing in a simple way: facilitate reporting.\r\nIt has several menus allowing you to:\r\n-Signal a Phishing page to browsers, \r\nReport phishing to spoofed companies\r\n-Provide false data to the phishing site.\r\nNevertheless, it can only open the pages/emails to be validated/sent. It does not perform everything, you have to cut paste clicks.\r\nBut, it prefills to the maximum"
+    },
+    "sidebaractiontitle": {   "message": "Simulate someone", "description": "Sidebar Title"},
+    "menuSignal": {           "message": "Signaling",     "description": "Name 1st menu"},
+    "menuReport": {           "message": "Reporting",     "description": "Name 2nd menu"},
+    "menuFill": {             "message": "Filling",       "description": "Name 3rd menu"},
+    "btnSettings": {          "message": "Settings",      "description": "Button"},
+    "btnSettingSave": {       "message": "Save",          "description": "Button"},
+    "LabSettingLang": {       "message": "Lang",          "description": "Label"},
+    "LabSettingUrl": {        "message": "Signal Url",    "description": "Label"},
+    "LabSettingSignalUrl": {  "message": "Report Url",    "description": "Label"},
+    "LabSettingVerbosity": {  "message": "Verbosity",     "description": "Label"},
+    "txtReport": {            "message": "Report",        "description": ""},
+    "txtSexe": {              "message": "Sexe",          "description": ""},
+    "txtName": {              "message": "Name",          "description": ""},
+    "txtFirstName": {         "message": "FirstName",     "description": ""},
+    "txtAge": {               "message": "Age",           "description": ""},
+    "txtBD": {                "message": "BirthDate",     "description": ""},
+    "txtAdrT": {              "message": "Adress Type",   "description": ""},
+    "txtAdrS": {              "message": "Adress Street", "description": ""},
+    "txtAdrZ": {              "message": "Adress ZIP",    "description": ""},
+    "txtAdrC": {              "message": "Adress City",   "description": ""},
+    "txtCBT": {               "message": "Credit Card Type", "description": ""},
+    "txtCBN": {               "message": "Credit Card",   "description": ""},
+    "txtCBC": {               "message": "CCV",           "description": ""},
+    "txtCBE": {               "message": "Expiry",        "description": ""},
+    "txteMail": {             "message": "eMail",         "description": ""},
+    "txtPword": {             "message": "Password",      "description": ""},
+    "txtTel": {               "message": "Phone",         "description": ""},
+    "txtSSN": {               "message": "SSN",           "description": ""},
+    "btnFakeAutoFill": {      "message": "Fill",          "description": ""},
+    "btnFakeReNew": {         "message": "NewOne",        "description": ""}
+}

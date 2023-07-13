@@ -1,0 +1,41 @@
+{
+    "extensionName": {
+      "message": "CounterPhishing",
+      "description": "Name of the extension"
+    },
+  
+    "extensionDescription": {
+      "message": "What is CounterPhishing",
+      "description": "Cette (modeste) extension, a pour objectif de faciliter la lutte contre le phishing d'un manière simple: faciliter les signalement.\r\nElle dispoe de plusieurs menus permettant de:\r\n-Signaler une page de Phishing,\r\n-Reporter aux entreprises usurpées le lien de phishing\r\n-Fournir des fausses données au site de phishing .\r\nNéanmoins, elle ne peut que ourvir les pages/emails à valider/envoyer. Elle ne fait pas tout il reste des clicks à faire.\r\nMais, elle préremplis au maximum."
+    },
+    "sidebaractiontitle": {   "message": "Simuler une personne", "description": "Sidebar Title"},
+    "menuSignal": {           "message": "Signaler",      "description": "Signaler un phishing aux acteurs sécurité."},
+    "menuReport": {           "message": "Rapporter",     "description": "Signaler un phishing aux acteurs usurpés."},
+    "menuFill": {             "message": "Remplir",       "description": "Name 3rd menu"},
+    "btnSettings": {          "message": "Préférences",   "description": "Button"},
+    "btnSettingSave": {       "message": "Sauvegarder",   "description": "Button"},
+    "LabSettingLang": {       "message": "Langue",        "description": "Label"},
+    "LabSettingUrl": {        "message": "Signal Url",    "description": "Label"},
+    "LabSettingSignalUrl": {  "message": "Report Url",    "description": "Label"},
+    "LabSettingVerbosity": {  "message": "Verbosité",     "description": "Label"},
+    "txtReport": {            "message": "Report",        "description": ""},
+    "txtSexe": {              "message": "Sexe",          "description": ""},
+    "txtName": {              "message": "Nom",           "description": ""},
+    "txtFirstName": {         "message": "Prénom",        "description": ""},
+    "txtAge": {               "message": "Age",           "description": ""},
+    "txtBD": {                "message": "Anniversaire",  "description": ""},
+    "txtAdrT": {              "message": "Adresse Type",  "description": ""},
+    "txtAdrS": {              "message": "Adresse Rue",   "description": ""},
+    "txtAdrZ": {              "message": "Code Postal",   "description": ""},
+    "txtAdrC": {              "message": "Ville",         "description": ""},
+    "txtCBT": {               "message": "Type Carte",    "description": ""},
+    "txtCBN": {               "message": "Numéro Carte",  "description": ""},
+    "txtCBC": {               "message": "CCV",           "description": ""},
+    "txtCBE": {               "message": "Expiration",    "description": ""},
+    "txteMail": {             "message": "eMail",         "description": ""},
+    "txtPword": {             "message": "Mot de passe",  "description": ""},
+    "txtTel": {               "message": "Téléphone",     "description": ""},
+    "txtSSN": {               "message": "SSN",           "description": ""},
+    "btnFakeAutoFill": {      "message": "Remplir",       "description": ""},
+    "btnFakeReNew": {         "message": "Nouveau",       "description": ""}
+}

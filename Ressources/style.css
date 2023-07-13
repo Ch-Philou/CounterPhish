@@ -1,0 +1,41 @@
+
+/************************
+ * Global Body Elements *
+ ************************/
+ body {
+     font-family: Arial, Helvetica, sans-serif;
+     background-color: black ;
+     color: white;
+ }
+ /************************
+  * HTML Link Decoration *
+  ************************/
+ a:link{         text-decoration: none;  color: #48c9b0;}
+ a:visited{      text-decoration: none;  color: #48c9b0;}
+ a:active {      text-decoration: none;  color: #48c9b0;}
+ a:hover {   	 text-decoration: solid;	color:  #ff8100;}
+ /********************
+  * Global and Title *
+  ********************/
+ /* Spcecific for Menu */
+ .Menu tr th {
+    font-weight: bold;
+    border-style:solid;
+    border-width:1px;
+    border-color:White;
+    border-collapse: collapse;
+    border-spacing: 1;
+    width: 250Px;
+    height: 500Px;
+}
+/* Different Backgroung for pair impair */
+.Menu tr:nth-child(even) {    background: #222222}
+.Menu tr:nth-child(odd) {     background: black}
+ /* Classic Cell */
+.Menu tr td {
+    border-style:solid;
+    border-width:1px;
+    border-color:White;
+    border-collapse: collapse;
+    border-spacing: 1;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="Ressources/style.css">
+  <title>Counter  Phishing Preferences</title>
+</head>
+</head>
+<body>
+  <form>
+    <table witdh="100%" height="300Px">
+      <!-- Language -->
+    <!--  
+      <tr>
+        <td><label for="Language" id="LabSettingLang">Lang</label></td>
+        <td>
+          <select id="Language">
+            <option value="FR">Francais</option>
+            <option value="EN">English</option>
+          </select>
+        </td>
+      </tr>
+    -->
+      <!-- Signaling Destination -->
+      <tr>
+        <td><label for="Signal_URL" id="LabSettingUrl">Signaling URL</label></td>
+        <td><textarea type="text" id="Signal_URL" name="Signal_URL" rows="4" cols="75" placeholder="Enter site prototype separated by newline"></textarea></td>
+      </tr>
+      <!-- Reporting Destination -->
+      <tr>
+        <td><label for="Signal_URL" id="LabSettingSignalUrl">Report URL</label></td>
+        <td><textarea type="text" id="Report_eMail" name="Report_eMail" rows="4" cols="75" placeholder="Enter mail prototype (name,emil) separated by newline"></textarea></td>
+      </tr>
+      <tr>
+        <td><label for="verbosity" id="LabSettingVerbosity">Verbosity</label></td>
+        <td><input type="number" id="verbosity" name="verbosity" min="0" max="10"></td>
+      </tr>
+    </table>
+    <button id="PrefSaveButton" type="submit" id="btnSettingSave">Save</button>
+  </form>
+  <br>
+  <div id="AddonVersion">...</div>
+  <script type="text/javascript" src="Settings.js"></script>
+</body>
+</html>
