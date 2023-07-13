@@ -1,0 +1,10 @@
+# Ignorez tous les logs (dossiers)
+**/Logs
+**/logs
+# Ignorez tous les logs (fichiers)
+**/*.log
+
+# Ignorez tous les fichiers de paramètres
+**/*.ini
+**/*.json
+**/*.json
