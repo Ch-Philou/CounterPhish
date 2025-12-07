@@ -1,29 +1,199 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link rel="stylesheet" type="text/css" href="Ressources/style.css">
   <title>Fausse Personnes</title>
 </head>
+
 <body>
-  <table class="Menu">
-    <tr><td id="txtSexe">Sexe</td>           <td id="Sexe"  width="200"></td></tr>
-    <tr><td id="txtName">Nom</td>            <td id="Name"           ></td></tr>
-    <tr><td id="txtFirstName">Prénom</td>    <td id="FirstName"      ></td></tr>
-    <tr><td id="txtAge">Age</td>             <td id="Age"            ></td></tr>
-    <tr><td id="txtBD">Anniversaire</td>     <td id="BirthDate"      ></td></tr>
-    <tr><td id="txtAdrT">Adresse (type)</td> <td id="Adrtype"        ></td></tr>
-    <tr><td id="txtAdrS">Adresse (rue)</td>  <td id="Adr"            ></td></tr>
-    <tr><td id="txtAdrZ">Adresse (ZIP)</td>  <td id="AdrZip"         ></td></tr>
-    <tr><td id="txtAdrC">Adresse (City)</td> <td id="AdrCity"        ></td></tr>
-    <tr><td id="txtCBT">CB Type</td>         <td id="CB_type"        ></td></tr>
-    <tr><td id="txtCBN">CB</td>              <td id="CB"             ></td></tr>
-    <tr><td id="txtCBC">CB CCV</td>          <td id="CB_CCV"         ></td></tr>
-    <tr><td id="txtCBE">CB exp</td>          <td id="CB_Exp"         ></td></tr>
-    <tr><td id="txteMail">eMail</td>         <td id="eMail"          ></td></tr>
-    <tr><td id="txtPword">Password</td>      <td id="Password"       ></td></tr>
-    <tr><td id="txtTel">Phone</td>           <td id="Phone"          ></td></tr>
-    <tr><td id="txtSSN">SSN</td>             <td id="SSN"            ></td></tr>
+  <table class="Fake">
+    <tr>
+      <td id="txtSexe"><svg class="icon" viewBox="0 0 24 24">
+          <path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z" />
+        </svg>Sexe</td>
+      <td id="Sexe" class="fake-value"></td>
+      <td><button class="copy-btn" data-target="Sexe" title="Copier"><svg class="copy-icon" viewBox="0 0 24 24">
+            <path
+              d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+          </svg></button></td>
+    </tr>
+    <tr>
+      <td id="txtName"><svg class="icon" viewBox="0 0 24 24">
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" />
+        </svg>Nom</td>
+      <td id="Name"></td>
+      <td><button class="copy-btn" data-target="Name" title="Copier"><svg class="copy-icon" viewBox="0 0 24 24">
+            <path
+              d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+          </svg></button></td>
+    </tr>
+    <tr>
+      <td id="txtFirstName"><svg class="icon" viewBox="0 0 24 24">
+          <path
+            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+        </svg>Prénom</td>
+      <td id="FirstName"></td>
+      <td><button class="copy-btn" data-target="FirstName" title="Copier"><svg class="copy-icon" viewBox="0 0 24 24">
+            <path
+              d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+          </svg></button></td>
+    </tr>
+    <tr>
+      <td id="txtAge"><svg class="icon" viewBox="0 0 24 24">
+          <path
+            d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
+        </svg>Age</td>
+      <td id="Age"></td>
+      <td><button class="copy-btn" data-target="Age" title="Copier"><svg class="copy-icon" viewBox="0 0 24 24">
+            <path
+              d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+          </svg></button></td>
+    </tr>
+    <tr>
+      <td id="txtBD"><svg class="icon" viewBox="0 0 24 24">
+          <path
+            d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z" />
+        </svg>Anniversaire</td>
+      <td id="BirthDate"></td>
+      <td><button class="copy-btn" data-target="BirthDate" title="Copier"><svg class="copy-icon" viewBox="0 0 24 24">
+            <path
+              d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+          </svg></button></td>
+    </tr>
+    <tr>
+      <td id="txtAdrT"><svg class="icon" viewBox="0 0 24 24">
+          <path
+            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+        </svg>Adresse (type)</td>
+      <td id="Adrtype"></td>
+      <td><button class="copy-btn" data-target="Adrtype" title="Copier"><svg class="copy-icon" viewBox="0 0 24 24">
+            <path
+              d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+          </svg></button></td>
+    </tr>
+    <tr>
+      <td id="txtAdrS"><svg class="icon" viewBox="0 0 24 24">
+          <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+        </svg>Adresse (rue)</td>
+      <td id="Adr"></td>
+      <td><button class="copy-btn" data-target="Adr" title="Copier"><svg class="copy-icon" viewBox="0 0 24 24">
+            <path
+              d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+          </svg></button></td>
+    </tr>
+    <tr>
+      <td id="txtAdrZ"><svg class="icon" viewBox="0 0 24 24">
+          <path
+            d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76l1.57-2.16 1.56 2.16L16.53 12 18.15 10.83 16.08 8H20v6z" />
+        </svg>Adresse (ZIP)</td>
+      <td id="AdrZip"></td>
+      <td><button class="copy-btn" data-target="AdrZip" title="Copier"><svg class="copy-icon" viewBox="0 0 24 24">
+            <path
+              d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+          </svg></button></td>
+    </tr>
+    <tr>
+      <td id="txtAdrC"><svg class="icon" viewBox="0 0 24 24">
+          <path
+            d="M15 11V5l-3-3-3 3v2H2v11h20V11h-7zm-8 6h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2zm6 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2zm6 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2z" />
+        </svg>Adresse (City)</td>
+      <td id="AdrCity"></td>
+      <td><button class="copy-btn" data-target="AdrCity" title="Copier"><svg class="copy-icon" viewBox="0 0 24 24">
+            <path
+              d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+          </svg></button></td>
+    </tr>
+    <tr>
+      <td id="txtCBT"><svg class="icon" viewBox="0 0 24 24">
+          <path
+            d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z" />
+        </svg>CB Type</td>
+      <td id="CB_type"></td>
+      <td><button class="copy-btn" data-target="CB_type" title="Copier"><svg class="copy-icon" viewBox="0 0 24 24">
+            <path
+              d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+          </svg></button></td>
+    </tr>
+    <tr>
+      <td id="txtCBN"><svg class="icon" viewBox="0 0 24 24">
+          <path
+            d="M21 8v12.993A1 1 0 0 1 20.007 22H3.993A.993.993 0 0 1 3 21.008V2.992C3 2.455 3.449 2 4.002 2h10.995L21 8zm-2 1h-5V4H5v16h14V9zM8 7h3v2H8V7zm0 4h8v2H8v-2zm0 4h8v2H8v-2z" />
+        </svg>CB</td>
+      <td id="CB"></td>
+      <td><button class="copy-btn" data-target="CB" title="Copier"><svg class="copy-icon" viewBox="0 0 24 24">
+            <path
+              d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+          </svg></button></td>
+    </tr>
+    <tr>
+      <td id="txtCBC"><svg class="icon" viewBox="0 0 24 24">
+          <path
+            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3 3.1-3 1.71 0 3.1 1.29 3.1 3v2z" />
+        </svg>CB CCV</td>
+      <td id="CB_CCV"></td>
+      <td><button class="copy-btn" data-target="CB_CCV" title="Copier"><svg class="copy-icon" viewBox="0 0 24 24">
+            <path
+              d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+          </svg></button></td>
+    </tr>
+    <tr>
+      <td id="txtCBE"><svg class="icon" viewBox="0 0 24 24">
+          <path
+            d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v9z" />
+        </svg>CB exp</td>
+      <td id="CB_Exp"></td>
+      <td><button class="copy-btn" data-target="CB_Exp" title="Copier"><svg class="copy-icon" viewBox="0 0 24 24">
+            <path
+              d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+          </svg></button></td>
+    </tr>
+    <tr>
+      <td id="txteMail"><svg class="icon" viewBox="0 0 24 24">
+          <path
+            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+        </svg>eMail</td>
+      <td id="eMail"></td>
+      <td><button class="copy-btn" data-target="eMail" title="Copier"><svg class="copy-icon" viewBox="0 0 24 24">
+            <path
+              d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+          </svg></button></td>
+    </tr>
+    <tr>
+      <td id="txtPword"><svg class="icon" viewBox="0 0 24 24">
+          <path
+            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3 3.1-3 1.71 0 3.1 1.29 3.1 3v2z" />
+        </svg>Password</td>
+      <td id="Password"></td>
+      <td><button class="copy-btn" data-target="Password" title="Copier"><svg class="copy-icon" viewBox="0 0 24 24">
+            <path
+              d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+          </svg></button></td>
+    </tr>
+    <tr>
+      <td id="txtTel"><svg class="icon" viewBox="0 0 24 24">
+          <path
+            d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 1.23.1 2.44.3 3.57.67.35.13.43.52 1.02.24l2.2-2.2z" />
+        </svg>Phone</td>
+      <td id="Phone"></td>
+      <td><button class="copy-btn" data-target="Phone" title="Copier"><svg class="copy-icon" viewBox="0 0 24 24">
+            <path
+              d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+          </svg></button></td>
+    </tr>
+    <tr>
+      <td id="txtSSN"><svg class="icon" viewBox="0 0 24 24">
+          <path
+            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+        </svg>SSN</td>
+      <td id="SSN"></td>
+      <td><button class="copy-btn" data-target="SSN" title="Copier"><svg class="copy-icon" viewBox="0 0 24 24">
+            <path
+              d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+          </svg></button></td>
+    </tr>
   </table>
   <button id="btnFakeAutoFill" type="submit">Remplir</button>
   <button id="btnFakeReNew" type="submit">Changer</button>
@@ -32,4 +202,5 @@
   <script type="text/javascript" src="French.js"></script>
   <script type="text/javascript" src="Settings.js"></script>
 </body>
+
 </html>

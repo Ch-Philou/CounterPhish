@@ -1,22 +1,55 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link rel="stylesheet" type="text/css" href="Ressources/style.css">
-  <title>Counter  Phishing Menu</title>
+  <title>Counter Phishing Menu</title>
 </head>
+
 <body>
   <h1>Menu</h1>
   <table class="Menu">
-    <tr><td><a href="#Signal" id="menuSignal">__MSG_menuSignal__</a></td></tr>
-    <tr><td><a href="#Report" id="menuReport">__MSG_menuReport__</a></td></tr>
-    <tr><td><a href="#Fill"   id="menuFill"  >__MSG_menuFill__</a></td></tr>
+    <tr>
+      <td>
+        <a href="#Signal" id="menuSignal">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
+          </svg>
+          __MSG_menuSignal__
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="#Report" id="menuReport">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path
+              d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+          </svg>
+          __MSG_menuReport__
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="#Fill" id="menuFill">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path
+              d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+          </svg>
+          __MSG_menuFill__
+        </a>
+      </td>
+    </tr>
   </table>
-  <img src="icons/32.png"/ title="Counter Phish">
+  <img src="icons/32.png" / title="Counter Phish">
   <div id="preference">
     <button id="btnSettings">__MSG_btnSettings__</button>
   </div>
   <div id="AddonVersion">...</div>
   <script type="text/javascript" src="Settings.js"></script>
 </body>
+
 </html>

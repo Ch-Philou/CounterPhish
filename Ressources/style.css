@@ -1,41 +1,240 @@
-
 /************************
  * Global Body Elements *
  ************************/
- body {
-     font-family: Arial, Helvetica, sans-serif;
-     background-color: black ;
-     color: white;
- }
- /************************
-  * HTML Link Decoration *
-  ************************/
- a:link{         text-decoration: none;  color: #48c9b0;}
- a:visited{      text-decoration: none;  color: #48c9b0;}
- a:active {      text-decoration: none;  color: #48c9b0;}
- a:hover {   	 text-decoration: solid;	color:  #ff8100;}
- /********************
-  * Global and Title *
-  ********************/
- /* Spcecific for Menu */
- .Menu tr th {
-    font-weight: bold;
-    border-style:solid;
-    border-width:1px;
-    border-color:White;
-    border-collapse: collapse;
-    border-spacing: 1;
-    width: 250Px;
-    height: 500Px;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 16px;
 }
-/* Different Backgroung for pair impair */
-.Menu tr:nth-child(even) {    background: #222222}
-.Menu tr:nth-child(odd) {     background: black}
- /* Classic Cell */
-.Menu tr td {
-    border-style:solid;
-    border-width:1px;
-    border-color:White;
+
+h1 {
+    color: #48c9b0;
+    border-bottom: 2px solid #48c9b0;
+    padding-bottom: 8px;
+    margin-top: 0;
+}
+
+/************************
+ * HTML Link Decoration *
+ ************************/
+a:link {
+    text-decoration: none;
+    color: #48c9b0;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #48c9b0;
+}
+
+a:active {
+    text-decoration: none;
+    color: #48c9b0;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ff8100;
+}
+
+/********************
+ * Global and Title *
+ ********************/
+
+/* Menu Styles */
+.Menu {
+    width: 100%;
+    max-width: 600px;
     border-collapse: collapse;
-    border-spacing: 1;
+    margin-bottom: 16px;
+}
+
+.Menu tr td {
+    border: 1px solid #333;
+    padding: 12px;
+    vertical-align: middle;
+    background: #222;
+}
+
+.Menu tr:hover td {
+    background-color: #2a2a2a;
+}
+
+.Menu tr td:first-child {
+    width: 150px;
+    font-weight: bold;
+    color: #aaa;
+}
+
+/* Fake Styles */
+.Fake {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+}
+
+.Fake tr td {
+    border: 1px solid #333;
+    padding: 2px 5px;
+    /* Reduced vertical padding */
+    height: 24px;
+    /* Fixed height for consistency */
+    vertical-align: middle;
+    background: #222;
+    font-size: 0.9em;
+}
+
+.Fake tr:hover td {
+    background-color: #2a2a2a;
+}
+
+.Fake tr td:first-child {
+    width: 150px;
+    font-weight: bold;
+    color: #aaa;
+}
+
+.fake-value {
+    width: 200px;
+    padding-left: 8px;
+}
+
+.copy-icon {
+    margin: 0;
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+/* Preferences Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 800px;
+}
+
+label {
+    font-weight: bold;
+    color: #48c9b0;
+    display: block;
+    margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    background-color: #333;
+    border: 1px solid #555;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #48c9b0;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Buttons */
+button {
+    background-color: #48c9b0;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #36a58e;
+}
+
+button.secondary {
+    background-color: #555;
+    color: white;
+}
+
+button.secondary:hover {
+    background-color: #666;
+}
+
+button.danger {
+    background-color: #d32f2f;
+    color: white;
+}
+
+button.danger:hover {
+    background-color: #b71c1c;
+}
+
+/* Icons */
+.icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+    fill: currentColor;
+}
+
+/* Copy Button */
+.copy-btn {
+    background: transparent;
+    border: 1px solid #48c9b0;
+    color: #48c9b0;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 4px 8px;
+    margin-left: 8px;
+    font-size: 0.8em;
+    transition: all 0.2s;
+}
+
+.copy-btn:hover {
+    background: #48c9b0;
+    color: black;
+}
+
+/* Dynamic Table Styles */
+.dynamic-table-container {
+    border: 1px solid #555;
+    border-radius: 4px;
+    background: #222;
+    padding: 10px;
+}
+
+.dynamic-list-item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 8px;
+    align-items: center;
+}
+
+.dynamic-list-item input {
+    flex: 1;
+}
+
+.dynamic-list-item button {
+    padding: 4px 8px;
+}
+
+#AddonVersion {
+    margin-top: 20px;
+    color: #666;
+    font-size: 0.8em;
+    text-align: right;
 }

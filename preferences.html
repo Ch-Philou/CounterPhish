@@ -1,45 +1,57 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link rel="stylesheet" type="text/css" href="Ressources/style.css">
-  <title>Counter  Phishing Preferences</title>
+  <title>Counter Phishing Preferences</title>
 </head>
 </head>
+
 <body>
   <form>
-    <table witdh="100%" height="300Px">
-      <!-- Language -->
-    <!--  
-      <tr>
-        <td><label for="Language" id="LabSettingLang">Lang</label></td>
-        <td>
-          <select id="Language">
-            <option value="FR">Francais</option>
-            <option value="EN">English</option>
-          </select>
-        </td>
-      </tr>
-    -->
-      <!-- Signaling Destination -->
-      <tr>
-        <td><label for="Signal_URL" id="LabSettingUrl">Signaling URL</label></td>
-        <td><textarea type="text" id="Signal_URL" name="Signal_URL" rows="4" cols="75" placeholder="Enter site prototype separated by newline"></textarea></td>
-      </tr>
-      <!-- Reporting Destination -->
-      <tr>
-        <td><label for="Signal_URL" id="LabSettingSignalUrl">Report URL</label></td>
-        <td><textarea type="text" id="Report_eMail" name="Report_eMail" rows="4" cols="75" placeholder="Enter mail prototype (name,emil) separated by newline"></textarea></td>
-      </tr>
-      <tr>
-        <td><label for="verbosity" id="LabSettingVerbosity">Verbosity</label></td>
-        <td><input type="number" id="verbosity" name="verbosity" min="0" max="10"></td>
-      </tr>
-    </table>
-    <button id="PrefSaveButton" type="submit" id="btnSettingSave">Save</button>
+    <h1><svg class="icon" viewBox="0 0 24 24">
+        <path
+          d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.5.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z" />
+      </svg>Counter Phishing Preferences</h1>
+
+    <!-- Signaling URL -->
+    <div>
+      <label for="Signal_URL" id="LabSettingUrl">Signaling URL</label>
+      <textarea id="Signal_URL" name="Signal_URL" rows="3"
+        placeholder="Enter site prototype separated by newline"></textarea>
+    </div>
+
+    <!-- Reporting Destination -->
+    <div>
+      <label id="LabSettingSignalUrl">Report URL List</label>
+      <div class="dynamic-table-container">
+        <div id="ReportListContainer">
+          <!-- Dynamic rows will be added here -->
+        </div>
+        <div class="dynamic-list-item" style="margin-top:10px; border-top:1px solid #444; padding-top:10px;">
+          <input type="text" id="NewName" placeholder="Name (e.g. Amazon)">
+          <input type="text" id="NewEmail" placeholder="Email (e.g. stop-spoofing@amazon.com)">
+          <button type="button" id="BtnAddReport" class="secondary">Add</button>
+        </div>
+      </div>
+      <!-- Hidden input to store the CSV for compatibility -->
+      <input type="hidden" id="Report_eMail" name="Report_eMail">
+    </div>
+
+    <!-- Verbosity -->
+    <div>
+      <label for="verbosity" id="LabSettingVerbosity">Verbosity</label>
+      <input type="number" id="verbosity" name="verbosity" min="0" max="10">
+    </div>
+
+    <div style="margin-top: 20px;">
+      <button id="PrefSaveButton" type="button">Save Settings</button>
+    </div>
   </form>
   <br>
   <div id="AddonVersion">...</div>
   <script type="text/javascript" src="Settings.js"></script>
 </body>
+
 </html>
